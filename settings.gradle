@@ -1,0 +1,5 @@
+rootProject.name = 'OTIS'
+include 'infraestructura'
+include 'aplicacion'
+include 'dominio'
+
