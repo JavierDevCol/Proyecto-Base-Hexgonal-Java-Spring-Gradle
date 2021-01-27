@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/infraestructura/Proyecto-Base-Hexgonal-Java-Spring-Gradle.iml" filepath="$PROJECT_DIR$/infraestructura/Proyecto-Base-Hexgonal-Java-Spring-Gradle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/infraestructura.iml" filepath="$PROJECT_DIR$/.idea/modules/infraestructura.iml" />
     </modules>
   </component>
 </project>

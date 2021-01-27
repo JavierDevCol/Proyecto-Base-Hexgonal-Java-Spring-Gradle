@@ -10,5 +10,16 @@ repositories {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    compile project.ext.springbootweb
+    compile project.ext.swagger
+
+    compile project.ext.apachecommons
+    compile project.ext.springbootjdbc
+    runtimeOnly project.ext.db
+    testImplementation project.ext.flywaytest
+
+    implementation project.ext.springbootDataJpa
+    implementation project(':aplicacion')
+    implementation project(':dominio')
 }
