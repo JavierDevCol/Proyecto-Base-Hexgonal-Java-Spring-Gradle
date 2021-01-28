@@ -11,14 +11,13 @@ repositories {
 
 dependencies {
 
-    compile project.ext.springbootweb
+    compile "org.springframework.boot:spring-boot-starter-web:2.3.4.RELEASE"
     compile project.ext.swagger
 
-    compile project.ext.apachecommons
-    runtimeOnly project.ext.db
-    testImplementation project.ext.flywaytest
+    runtimeOnly "mysql:mysql-connector-java:8.0.20"
+    implementation "org.springframework.boot:spring-boot-starter-data-jpa:2.3.4.RELEASE"
 
-    implementation project.ext.springbootDataJpa
-    implementation project(':aplicacion')
+
     implementation project(':dominio')
+    implementation project(':aplicacion')
 }
