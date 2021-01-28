@@ -6,9 +6,20 @@ group 'org.example'
 version '1.0-SNAPSHOT'
 
 repositories {
-    mavenCentral()
+    jcenter()
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    runtime 'mysql:mysql-connector-java:8.0.20'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.3.4.RELEASE'
+
+    implementation 'org.mapstruct:mapstruct:1.4.1.Final'
+    annotationProcessor 'org.mapstruct:mapstruct-processor:1.4.1.Final'
+
+    implementation "io.springfox:springfox-boot-starter:3.0.0"
+    compile "io.springfox:springfox-swagger-ui:3.0.0"
+    implementation project(':dominio')
+
+    implementation project(':aplicacion')
 }

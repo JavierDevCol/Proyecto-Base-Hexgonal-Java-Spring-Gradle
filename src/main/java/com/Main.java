@@ -1,5 +1,6 @@
 package com;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
@@ -7,6 +8,6 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 public class Main {
     public static void main(String[] args) {
-        System.out.println("HOLA  PERRITOS, MI PRIMER PROYECTO DESDE CERO(O) CON GRADLE");
+        SpringApplication.run(Main.class, args);
     }
 }
