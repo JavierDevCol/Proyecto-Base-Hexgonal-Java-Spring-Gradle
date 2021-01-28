@@ -1,10 +1,10 @@
 package com.persona;
 
-import com.modelo.dto.Persona;
+import com.modelo.entidades.Persona;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")
-public interface Converter {
+public interface ConverterPersona {
 
     PersonaEntity personaToPersonaEntity(Persona persona);
 

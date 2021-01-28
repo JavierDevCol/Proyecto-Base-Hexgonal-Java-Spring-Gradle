@@ -1,6 +1,6 @@
 package com.puerto.repositorio;
 
-import com.modelo.dto.Persona;
+import com.modelo.entidades.Persona;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
 package com.persona.adaptador;
 
-import com.modelo.dto.Persona;
-import com.persona.Converter;
+import com.modelo.entidades.Persona;
+import com.persona.ConverterPersona;
 import com.persona.PersonaEntity;
 import com.persona.dao.PersonaDao;
 import com.puerto.repositorio.RepositorioPersona;
@@ -14,11 +14,11 @@ import java.util.stream.Collectors;
 public class PersonaRepositorioImpl implements RepositorioPersona {
 
     private final PersonaDao personaDao;
-    private final Converter converter;
+    private final ConverterPersona converterPersona;
 
-    public PersonaRepositorioImpl(PersonaDao personaDao, Converter converter) {
+    public PersonaRepositorioImpl(PersonaDao personaDao, ConverterPersona converterPersona) {
         this.personaDao = personaDao;
-        this.converter = converter;
+        this.converterPersona = converterPersona;
     }
 
     @Override
@@ -27,7 +27,7 @@ public class PersonaRepositorioImpl implements RepositorioPersona {
         return list
                 .stream()
                 .map(
-                p -> converter.personaEntityToPersona(p)
+                p -> converterPersona.personaEntityToPersona(p)
         )
                 .collect(Collectors.toList());
     }

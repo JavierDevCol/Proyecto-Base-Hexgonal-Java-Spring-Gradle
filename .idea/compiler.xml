@@ -11,6 +11,11 @@
         <module name="OTIS.dominio.main" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="15" />
+    <bytecodeTargetLevel target="15">
+      <module name="OTIS.comun-aplicacion.main" target="11" />
+      <module name="OTIS.comun-aplicacion.test" target="11" />
+      <module name="OTIS.comun.main" target="11" />
+      <module name="OTIS.comun.test" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
