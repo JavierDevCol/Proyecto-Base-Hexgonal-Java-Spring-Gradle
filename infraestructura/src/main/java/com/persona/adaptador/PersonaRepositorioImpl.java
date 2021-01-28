@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 public class PersonaRepositorioImpl implements RepositorioPersona {
 
     private final PersonaDao personaDao;
-    private final ConverterPersona converterPersona;
+    private ConverterPersona converterPersona;
 
     public PersonaRepositorioImpl(PersonaDao personaDao, ConverterPersona converterPersona) {
         this.personaDao = personaDao;
