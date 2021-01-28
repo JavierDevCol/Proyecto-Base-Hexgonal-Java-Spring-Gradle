@@ -10,8 +10,10 @@ repositories {
 }
 
 dependencies {
-
+    implementation 'org.mapstruct:mapstruct:1.4.1.Final'
+    annotationProcessor 'org.mapstruct:mapstruct-processor:1.4.1.Final'
     compile "org.springframework.boot:spring-boot-starter-web:2.3.4.RELEASE"
+    compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.0'
     compile project.ext.swagger
 
     runtimeOnly "mysql:mysql-connector-java:8.0.20"
