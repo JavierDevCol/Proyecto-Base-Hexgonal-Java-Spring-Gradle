@@ -1,7 +1,7 @@
 package com.controller;
 
-import com.ceiba.infraestructura.actuator.ManejadorHealthCheckBloques;
-import com.ceiba.infraestructura.error.ErrorHealthCheck;
+import com.actuator.ManejadorHealthCheckBloques;
+import com.error.ErrorHealthCheck;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

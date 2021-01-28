@@ -1,8 +1,8 @@
 package com.error;
 
 
-import com.ceiba.dominio.excepcion.*;
-import com.ceiba.infraestructura.excepcion.ExcepcionTecnica;
+import com.excepcion.*;
+import com.excepcion.ExcepcionTecnica;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;

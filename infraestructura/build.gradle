@@ -19,15 +19,6 @@ dependencies {
     runtimeOnly project.ext.db
     testImplementation project.ext.flywaytest
 
-    configurations {
-        mapstruct
-    }
-
-    dependencies {
-        compile( 'org.mapstruct:mapstruct:1.4.1.Final' )
-        mapstruct( 'org.mapstruct:mapstruct-processor:1.4.1.Final' )
-    }
-
     implementation project.ext.springbootDataJpa
     implementation project(':aplicacion')
     implementation project(':dominio')

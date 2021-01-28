@@ -1,6 +1,6 @@
 package com.actuator;
 
-import com.ceiba.infraestructura.error.ErrorHealthCheck;
+import com.error.ErrorHealthCheck;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;

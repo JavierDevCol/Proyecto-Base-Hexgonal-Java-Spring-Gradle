@@ -1,6 +1,6 @@
 package com.actuator;
 
-import com.ceiba.infraestructura.excepcion.ExcepcionTecnica;
+import com.excepcion.ExcepcionTecnica;
 
 /**
  * Interface que tiene por objetivo ser implementada por todos los bloques 
@@ -16,10 +16,7 @@ public interface Salud  {
 	 */
 	public void registrarBloque();
 	
-	/**
-	 * Valida la salud del bloque
-	 * @throws ExepcionBloqueSinServicio
-	 */
+
 	public void verificar() throws ExcepcionTecnica;//a�adir
 
 }
