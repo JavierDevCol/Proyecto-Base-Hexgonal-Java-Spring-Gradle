@@ -11,7 +11,7 @@ repositories {
 
 dependencies {
 
-
+    implementation project.ext.springtxt
     implementation project(':dominio')
 
     compileOnly project.ext.lombok

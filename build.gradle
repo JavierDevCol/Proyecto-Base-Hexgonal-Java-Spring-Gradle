@@ -12,9 +12,13 @@ allprojects {
 
     project.ext.lombok = ["org.projectlombok:lombok:1.18.10"]
 
+    project.ext.springtxt = [
+            "org.springframework:spring-tx:${springVersion}",
+            "org.springframework:spring-context:${springVersion}"
+    ]
     project.ext.swagger = [
-            "io.springfox:springfox-swagger-ui:2.9.2",
-            "io.springfox:springfox-swagger2:2.9.2"
+            "io.springfox:springfox-swagger-ui:3.0.0",
+            "io.springfox:springfox-boot-starter:3.0.0"
     ]
     project.ext.h2 = ["com.h2database:h2:1.4.194"]
 }
