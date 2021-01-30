@@ -2,10 +2,12 @@ package com.persona.consulta;
 
 import com.modelo.entidades.Persona;
 import com.persona.consulta.consultaDomain.ConsultaPersonaDto;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class FabricaPersonaConsulta {
 
     public Persona crear(ConsultaPersonaDto persona) {
