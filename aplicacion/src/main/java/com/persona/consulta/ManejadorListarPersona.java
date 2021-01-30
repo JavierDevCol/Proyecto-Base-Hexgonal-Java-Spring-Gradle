@@ -1,6 +1,7 @@
 package com.persona.consulta;
 
 import com.modelo.entidades.Persona;
+import com.persona.RespuestaPersona;
 import com.persona.consulta.consultaDomain.ConsultaPersonaDto;
 import com.puerto.repositorio.RepositorioConsultaPersona;
 import org.springframework.stereotype.Component;
@@ -11,15 +12,15 @@ import java.util.List;
 public class ManejadorListarPersona {
 
     private final RepositorioConsultaPersona repositorioConsultaPersona;
-    private final FabricaPersonaConsulta fabricaPersonaConsulta;
+    private final ProductorListarPersona productorListarPersona;
 
-    public ManejadorListarPersona(RepositorioConsultaPersona repositorioConsultaPersona, FabricaPersonaConsulta fabricaPersonaConsulta) {
+    public ManejadorListarPersona(RepositorioConsultaPersona repositorioConsultaPersona, ProductorListarPersona productorListarPersona) {
         this.repositorioConsultaPersona = repositorioConsultaPersona;
-        this.fabricaPersonaConsulta = fabricaPersonaConsulta;
+        this.productorListarPersona = productorListarPersona;
     }
 
-    public List<ConsultaPersonaDto> ejecutar() {
+    public RespuestaPersona ejecutar() {
         List<Persona> personaList = repositorioConsultaPersona.listar();
-        return fabricaPersonaConsulta.crearLista(personaList);
+        return productorListarPersona.ejecutar(personaList);
     }
 }

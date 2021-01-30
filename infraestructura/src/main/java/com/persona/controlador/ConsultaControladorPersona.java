@@ -2,6 +2,7 @@ package com.persona.controlador;
 
 
 import com.persona.PersonaEntity;
+import com.persona.RespuestaPersona;
 import com.persona.consulta.ManejadorListarPersona;
 import com.persona.consulta.consultaDomain.ConsultaPersonaDto;
 import io.swagger.annotations.ApiOperation;
@@ -21,7 +22,7 @@ public class ConsultaControladorPersona {
 
     @GetMapping
     @ApiOperation("Permite listar todos las personas existentes")
-    public List<ConsultaPersonaDto> list() {
+    public RespuestaPersona list() {
         return manejadorLIstarPersona.ejecutar();
     }
 }
