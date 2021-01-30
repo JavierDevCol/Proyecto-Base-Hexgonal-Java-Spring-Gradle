@@ -4,7 +4,7 @@ import com.modelo.entidades.Persona;
 import org.springframework.stereotype.Component;
 
 @Component
-public class FabricaPersona {
+public class FabricaPersonaComando {
 
     public Persona crear(ComandoPersona persona) {
         return new Persona(
